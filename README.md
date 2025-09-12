@@ -55,7 +55,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+De website van Diptyque is erg makkelijk te navigeren met een screenreader. De layout is minimalistisch en heeft een goede flow. Elk element wordt kort en duidelijk benoemd. Er zijn wel wat afbeeldingen die "Image empty" aangeven. Hier zou nog verbetering in kunnen komen. Verder is het contrast goed, want er zijn veel zwarte letters op een witte achtergrond. Een minimalistisch maar strak ontwerp dat werkt. Aangezien het een luxe parfummerk is, is het goed dat het erg inclusief is. Dit staat erg professioneel. Het was een erg interessante ervaring en ik was positief verrast. Verder zijn er weinig opmerkingen. 
 
 </details>
 
@@ -67,10 +67,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Homepagina.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/nav.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -89,6 +89,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  De grid en flexbox oefeningen gingen best oke. Beter dan gedacht. Verder vond ik het erg fijn dat we eerst code gingen
+  leren en vervolgens pas gingen coderen. Toen ik eenmaal toekam aan de html, ging het redelijk vlot. Wat minder ging
+  was mijn planning de afgelopen paar dagen. Ik hoop snel verder te kunnen met mijn html. Het verschil tussen article en section snap ik nog steeds niet.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -104,9 +107,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
