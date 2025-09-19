@@ -89,24 +89,17 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  De grid en flexbox oefeningen gingen best oke. Beter dan gedacht. Verder vond ik het erg fijn dat we eerst code gingen
-  leren en vervolgens pas gingen coderen. Toen ik eenmaal toekam aan de html, ging het redelijk vlot. Wat minder ging
-  was mijn planning de afgelopen paar dagen. Ik hoop snel verder te kunnen met mijn html. Het verschil tussen article en section snap ik nog steeds niet.
+  De grid en flexbox oefeningen gingen best oke. Beter dan gedacht. Verder vond ik het erg fijn dat we eerst code gingen leren en vervolgens pas gingen coderen. Toen ik eenmaal toekam aan de html, ging het redelijk vlot. Wat minder ging was mijn planning de afgelopen paar dagen. Ik hoop snel verder te kunnen met mijn html. Het verschil tussen article en section snap ik nog steeds niet.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Zelf heb ik mijn breakdown schets laten zien en feedback gekregen op de html. Hierdoor kan ik goed aan de slag
+  met het begin van mijn eerste pagina.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
+  Veel ging al goed. De HTML begrijp ik eindelijk. Ik mocht een aantal dingen weglaten om het makkelijker te maken.
 
 </details>
 
@@ -120,26 +113,27 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het beginnetje van de HTML ging redelijk vlot, aangezien ik dit vorige week heb laten zien tijdens het gesprek.
+  Ik had graag meer aan de CSS willen doen, alleen ging dit door mijn verhuizing niet kwa tijd. Ik hoop vanavond nog een inhaal slag te kunnen maken.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Ons groepje houdt niet echt contact, dus we bespreken het tijdens het gesprek.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  hier na afloop snel de uitkomsten van de meeting vastleggen.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Ik was nog niet aan pagina 2 begonnen, maar ben nu geswitched van FAQ naar Contact. De contact pagina heeft een form en dat is verplicht. Verder had ik nog wat format tips gekregen. De rest van mijn HTML was prima.
+
+  Mijn hoofdpagina:
+  <img src="readme-images/week 3.png" width="375px" alt="Mijn webpagina van week 3">
+  
+  De nieuwe tweede pagina:
+  <img src="readme-images/pagina 2.png" width="375px" alt="Pagina 2 contact">
+
 
 </details>
 
