@@ -27,5 +27,58 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+.home {
+	margin: 0;
+}
 
+.home header button, .home header a{
+  	display: block;
+  	background: none;
+  	border: none;
+ 
+  	font: inherit;
+  	color: inherit;
+  	cursor: pointer;
+	padding: 0;
+}
+
+main img {
+	width: 20%;
+}
+
+header {
+  display: flex;
+  align-items: center;     
+  justify-content: space-between; 
+  gap: 1rem;                
+  padding: 1rem;
+}
+
+header img {
+  display: block; 
+  width: 2em;        
+}
+
+h1 img {
+	width: 4.5em;
+	align-self: flex-end;
+}
+/* hoe kan ik h1 naar beneden krijgen?*/
+
+/********************************************/
+/* 					deel 1 					*/
+/********************************************/
+
+article:first-of-type{
+	display: flex;
+	flex-direction: column;
+}
+
+article:first-of-type img {
+ 	order: -1;
+  	width: 100%;
+}
+
+article:first-of-type h2 {
+	text-align: center;	
+}
