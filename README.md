@@ -148,7 +148,7 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  Mijn website scorde redelijk goed op gebied van toegankelijkheid. Fatima had het getest. Mijn website heeft een betere heading structuur, alt tekst en navigatie. Ik zou nog een aantal buttons kunnen verstoppen.
 </details>
 
 
@@ -162,25 +162,23 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  <img src="readme-images/week 4.png" width="375px" alt="Pagina 2 contact">
+  <img src="readme-images/week 4 stand van zaken.png" width="375px" alt="Pagina 2 contact">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
+   Websites bespreken en laten zien waar we moeite mee hadden.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+  
+  We hebben ons werk laten zien. De ene student had veelste veel divjes, de ander problemen met muziek afspelen op javascript en de ander liep vast bij een hamburger menu. Samen hebben we kunnen kijken naar de code en kunnen bespreken wat goede oplossingen zijn. Programmeren verloopt bij mij best goed. Ik loop niet lang vast bij problemen en kom er redelijk snel uit. Nu moet ik beginnen aan mijn tweede pagina en focus states toe gaan voegen.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik heb leren nesten van css class zodat ik niet telkens .home hoef te typen. Had gehoopt dit eerder te weten.
+
+  Later had ik mijn code door de W3C validator gedaan en kwam erachter dat mijn mappen structuur niet goed is. Dit moet ik nu handmatig aan gaan passen.
 
 </details>
 
