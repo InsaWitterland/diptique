@@ -204,7 +204,9 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/versprongen header 1.png" width="375px" alt="screenshot">
+  <img src="readme-images/versprongen header 2.png" width="375px" alt="screenshot">
+  Doordat bij pagina twee de H1 veranderde versprong het logo helemaal in de header en daardoor klopte niks meer..
 </details>
 
 
