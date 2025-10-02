@@ -230,5 +230,6 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   3. bron 3 ChatGpT - voor uitleg van element of om stukken te controleren als ik vastliep
   4. Bron 4 CodePen van Sanne - Oefening 2 - responsive  2-buttons hamburger
   5. Bron 5 W3Schools - CSS Styling Forms
+  6. Bron 6 Kevin Powell - Form Styling Essentials | The basics to modern CSS tips & tricks (YouTube)
 
 </details>
