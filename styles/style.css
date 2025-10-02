@@ -1,84 +1,1056 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  --color-text: #000000;
+  --color-background: #ffffff;
+  --color-backgroundshadow: #f4f4f4;
+  --color-active: #d0d0d0;
+  --color-focus: #0b1a92;
+
+  --color-succes: #289717;
+  --color-error: #811515;
+  --color-warning: #c3b440;
 }
 
 
 
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
+
+/****************************************/
+/*					General font stuff					*/
+/****************************************/
+
+@font-face {
+  font-family: "merchant";
+  font-weight: 300;
+  src: url("../font/diptique-font/DiptyqueSaintGermain-Regular.5558384.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "apercu";
+  font-weight: 300;
+  src: url("../font/apercu-pro/ApercuPro-Regular.2a38115.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "apercu";
+  font-weight: 600;
+  src: url("../font/apercu-pro/ApercuPro-Bold.woff2") format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "merchant", serif;
+  color: var(--color-text);
+  text-align: center;
+  font-weight: normal;
+}
+
+p,
+a,
+button {
+  font-family: "apercu", sans-serif;
+  color: var(--color-text);
+  text-align: center;
+  text-underline-offset: .5em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/**************************************************/
+/*			      	  	General deco. 		      			*/
+/**************************************************/
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+:focus,
+:focus-visible {
+  outline-offset: -.05em;
+}
+
+
+
+
+
+
+
+
+
+
+/****************************************/
+/* 								Header 								*/
+/****************************************/
+
+header > div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  width: 100%;
+  top: 0;
+  z-index: 100;
+
+  background-color: var(--color-background);
+  border-bottom: rgb(239, 239, 239) solid 1px;
+}
+
+header > div img {
+  display: block;
+  width: 2em;
+  height: auto;
+}
+
+.home header div > a:first-of-type img {
+  width: 4em;
+}
+
+.request header div > a:first-of-type {
+  padding: 1.5em;
+}
+
+.request header div > a:first-of-type img {
+  font-size: 4em;
+}
+
+header > div a,
+header > div button {
+  background: none;
+  border: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* shopping bag icon!!!!!!!!!!!!!!!!*/
+header button span {
+  position: absolute;
+  right:1em;
+  top:4em;
+  
+  min-width:1.25em;
+  padding:.4em .5em;
+  
+  background-color: var(--color-active);
+  border-radius:100%;
+  
+  font-size:.8em;
+  text-align:center;
+  color:var(--color-text);
+}
+
+/********************************/
+/* 		   	hamburger nav         */
+/********************************/
+
+/*           Top part           */
+
+nav button {
+  /* x icon */
+  background: none;
+  border: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+nav button img {
+  width: 2em;
+}
+
+nav a {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+nav div:first-of-type {
+  display: flex;
+  align-items: center;
+
+  gap: 1em;
+  width: 100%;
+}
+
+/*          Search bar           */
+
+nav div:first-of-type form {
+  flex: 1; /* take up remaining space... */
+}
+
+header input.search {
+  width: 100%;
+  padding: 3% 4%;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+header input.search:focus {
+  border-color: #532abd;
+  outline: none;
+  box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
+}
+
+/*         Bottom part        */
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  translate: -100% 0%;
+  transition: translate 0.3s;
+
+  background-color: var(--color-background);
+  z-index: 200;
+
+  padding: 1em;
+}
+
+nav.showMenu {
+  translate: 0% 0%;
+}
+
+nav ul {
+  padding-top: 1em;
+}
+
+nav li {
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Styling responsive header - 600px */
+
+@media (min-width:850px) {
+  /*hiding control button*/
+  header div > button:first-of-type {
+    display: none;
+  }
+
+
+  header > div:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    padding-left: 2em;
+
+    border: none;
+  }
+
+
+  /* 4 bovenste buttons in header*/
+  header > div:first-of-type button:nth-child(2) {
+    grid-column: 1;
+    justify-self: start;
+    align-items: center;
+
+
+  }
+
+  header > div:first-of-type > a:first-of-type {
+    grid-column: 3; /* skip column 2 */
+    justify-self: center;
+    align-items: center;
+  }
+
+   header > div:first-of-type > a:last-of-type {
+    grid-column: 5; 
+    justify-self: end;
+    align-items: center;
+    grid-row: 1; 
+
+    padding-right: 4em;
+  }
+
+  header > div:first-of-type button:last-of-type {
+    grid-column: 5;
+    justify-self: end;
+    align-items: center;
+    grid-row: 1; 
+
+    padding-right: 1em;
+  }
+  /***************************************************/
+
+  nav {
+    position:static;
+    translate: 0%;
+    padding: 0;
+  }
+
+  nav ul {
+    display:flex;
+    justify-content: space-evenly;
+
+    padding-top: 0;
+    padding-bottom: 1em;
+    margin: 0 auto; 
+    max-width: 850px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav a {
+    text-transform: uppercase;
+  }
+
+  nav form {
+    position: fixed;
+    top: -3.8em;
+    left: 4.5em;
+    z-index: 9999;
+  }
+
+  /* Search form */
+  header input.search {
+    width: auto;
+    
+    border: none;
+    border-bottom: 1px solid #ccc;
+
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  header input.search:focus {
+    border-color: #532abd;
+    outline: none;
+    box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************************************/
+
+/********************************/
+/* 				.home - page 1 				*/
+/********************************/
 
 .home {
-	margin: 0;
+  margin: 0;
 }
 
-.home header button, .home header a{
-  	display: block;
-  	background: none;
-  	border: none;
- 
-  	font: inherit;
-  	color: inherit;
-  	cursor: pointer;
-	padding: 0;
+.home main > article {
+  padding: 0 1em; 
+  margin: 0 1em 2em 1em;
 }
 
-main img {
-	width: 20%;
+.home main > section {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-header {
+/************************************************/
+/* 			      Article 1 - Philosykos        		*/
+/************************************************/
+
+.home main > article:first-of-type {
   display: flex;
-  align-items: center;     
-  justify-content: space-between; 
-  gap: 1rem;                
-  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  
+  max-width: 850px;
+  margin: 0 auto;     /* top and bottom  is 0, left/right auto = centers */   
 }
 
-header img {
-  display: block; 
-  width: 2em;        
+.home main > article:first-of-type h2 {
+  margin-top: 2em;
+  margin-bottom: 0;
 }
 
-h1 img {
-	width: 4.5em;
-	align-self: flex-end;
-}
-/* hoe kan ik h1 naar beneden krijgen?*/
-
-/********************************************/
-/* 					deel 1 					*/
-/********************************************/
-
-article:first-of-type{
-	display: flex;
-	flex-direction: column;
+.home main > article:first-of-type img {
+  order: -1; /*Makes the image go first*/
+  width: calc(100% + 4em);
 }
 
-article:first-of-type img {
- 	order: -1;
-  	width: 100%;
+/**/
+
+.home main > article:first-of-type a:first-of-type {
+  border: solid var(--color-text);
+  border-width: 1px;
+  border-bottom-width: 5px;
+  padding: 1em;
+  margin: 2em;
+
+  text-decoration: none;
 }
 
-article:first-of-type h2 {
-	text-align: center;	
+.home main > article:first-of-type a:first-of-type:hover {
+  background-color: var(--color-backgroundshadow);
+  border-width: 1px;
+
+  transition: background-color 0.3s ease, border-width 0.3s ease;
+}
+
+.home main > article:first-of-type a:first-of-type:active {
+  background-color: var(--color-active);
+  border-width: 2px;
+
+  transition: border-width 0.3s ease, background-color 0.3s ease;
+}
+
+/**/
+
+.home main > article:first-of-type a:last-of-type {
+  font-size: small;
+  text-underline-offset: .5em;
+}
+
+.home main > article:first-of-type a:last-of-type:hover {
+  border: 0;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: .8em;
+  text-decoration-thickness:.1em;
+}
+
+/************************************************/
+/* 			      Section 1 - Best sellers      		*/
+/************************************************/
+
+.home main > section:first-of-type {
+  margin-top: 5em;
+}
+
+.home main > section:first-of-type ul {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0.5em;
+}
+
+.home main > section:first-of-type li {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  max-width: 20em;
+}
+
+.home main article li > a {
+  text-decoration: none;
+}
+
+.home main > section:first-of-type a {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+
+
+/* button for animation thingy */
+.home main > section:first-of-type button {
+  padding: 1em;
+  width: 100%;
+
+  background-color: #000000;
+  color: var(--color-background);
+
+  border: none;
+}
+
+.home main > section:first-of-type button:hover {
+  background-color: #343434;  
+}
+
+.home main > section:first-of-type button:active {
+  background-color: #4c4c4c; 
+  transform: scale(0.9);
+}
+/* */
+
+
+
+
+.home main > section:first-of-type a img {
+  order: -1;
+  display: block;
+  width: 100%;
+}
+
+
+.home main > section:first-of-type h2 {
+  margin: 1em;
+}
+
+.home main > section:first-of-type p {
+  font-size: 0.75em;
+  margin: 1em;
+}
+
+.home main > section:first-of-type p:first-of-type {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  margin: 0;
+  background: var(--color-background);
+  padding: 0.01em 0.4em;
+  text-transform: uppercase;
+}
+
+/************************************************/
+/* 			    	Section 2 - La Droguerie 	 		  	*/
+/************************************************/
+
+.home main > section:nth-of-type(2) {
+  max-width: 850px;      
+  width: 100%;     
+  
+  margin: 6em auto;
+  position: relative;    
+  display: block;
+}
+
+.home main > section:nth-of-type(2) ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home main > section:nth-of-type(2) li {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.home main > section:nth-of-type(2) img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.home main > section:nth-of-type(2) button {
+  position: absolute;
+
+  background: rgb(255, 255, 255);
+  color: var(--color-text);
+  border: 1px var(--color-text) solid;
+  border-radius: 100%;
+
+  width: 2em;
+  height: 2em;
+  
+  transition: all 0.3s ease;
+}
+
+.home main > section:nth-of-type(2) button:hover, 
+.home main > section:nth-of-type(2) button:focus {
+  transform: rotate(90deg) scale(2);
+  transition: all 0.3s ease;
+
+  background: rgba(255, 255, 255, 0.604);
+  border: 2px var(--color-backgroundshadow) solid;
+}
+
+.home main > section:nth-of-type(2) button:first-of-type {
+  top: 48%;
+  left: 12%;
+}
+
+.home main > section:nth-of-type(2) button:nth-of-type(2) {
+  top: 55%;
+  left: 37%;
+}
+
+.home main > section:nth-of-type(2) button:nth-of-type(3) {
+  top: 66.5%;
+  left: 52%;
+}
+
+.home main > section:nth-of-type(2) button:nth-of-type(4) {
+  top: 66.5%;
+  left: 62%;
+}
+
+.home main > section:nth-of-type(2) button:nth-of-type(5) {
+  top: 47%;
+  left: 62%;
+}
+
+.home main > section:nth-of-type(2) button:nth-of-type(6) {
+  top: 48%;
+  left: 82%;
+}
+
+/************************************************/
+/* 			     	Article 2 - transparency    	  	*/
+/************************************************/
+
+.home main > article:nth-of-type(2) {
+  margin: 4em 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+
+  background-color: var(--color-backgroundshadow);
+}
+
+.home main > article:nth-of-type(2) img {
+  width: calc(100% + 4em);
+  margin-left: -2em;
+  display: block;
+
+  order: -1;
+}
+
+.home main > article:nth-of-type(2) div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 2em 3em 2em;
+}
+
+@media (min-width: 600px) {
+  .home main > article:nth-of-type(2) {
+  flex-direction: row;
+  }
+
+  .home main > article:nth-of-type(2) img {
+  width: 50%;
+}
+}
+
+
+
+/* text styling */
+.home main > article:nth-of-type(2) h2 {
+  margin-top: 2em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.home main > article:nth-of-type(2) p {
+  font-size: small;
+}
+
+.home main > article:nth-of-type(2) a {
+  font-size: small;
+  margin: 1em 0 1em 0;
+}
+
+.home main > article:nth-of-type(2) a:hover {
+  border: 0;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: .8em;
+  text-decoration-thickness:.1em;
+}
+
+
+
+
+/************************************************/
+/* 		  	    	Section 3 - Explore       			*/
+/************************************************/
+
+.home main > section:nth-of-type(3) h2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.home main > section:nth-of-type(3) a + a {
+  margin: 1em;
+  text-transform: capitalize;
+  font-family: "merchant", serif;
+}
+
+.home main > section:nth-of-type(3) a + a:hover {
+  border: 0;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: .8em;
+  text-decoration-thickness:.1em;
+}
+
+.home main > section:nth-of-type(3) ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+}
+
+.home main > section:nth-of-type(3) li {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 40%; /* grow, shrink and intial size before grow/ shrink*/
+  max-width: 300px;
+}
+
+.home main > section:nth-of-type(3) img {
+  width: 100%;
+  min-width: 160px;
+  display: block;
+}
+
+/************************************************/
+/* 		 	  	Section 4 - At your service  				*/
+/************************************************/
+
+.home main > section:nth-of-type(4) h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.home main > section:nth-of-type(4) ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+
+  margin: 0;
+  gap: 2em;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.home main > section:nth-of-type(4) li {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  flex: 0 0 20%;
+  max-width: 100px;
+}
+
+.home main > section:nth-of-type(4) img {
+  width: 100%;
+  min-width: 100px;
+}
+
+.home main > div:nth-last-of-type(-n+3) {
+  height: 1px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 4em;
+  background-color: black;
+}
+
+.home main > div:nth-last-of-type(2) {
+  height: 2px;
+}
+
+.home main > div:last-of-type {
+  margin-top: 0.4em;
+}
+
+/************************************************/
+/*     	      				Footer	 			        		*/
+/************************************************/
+
+footer section {
+  background-color: var(--color-backgroundshadow);
+
+  padding: 2em;
+  margin: 1em;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section h2 {
+  text-transform: uppercase;
+}
+
+footer section > a:first-of-type {
+  border: solid var(--color-text);
+  border-width: 1px;
+  border-bottom-width: 5px;
+  padding: 1em 2em 1em 2em;
+  margin: 2em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer section > a:first-of-type:hover {
+  background-color: var(--color-background);
+  border-width: 2px;
+
+  transition: background-color 0.3s ease, border-width 0.3s ease;
+}
+
+footer section > a:nth-of-type(2) {
+  margin: 2em;
+  text-decoration: underline;
+}
+
+footer section > a:nth-of-type(2):hover {
+  border: 0;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: .8em;
+  text-decoration-thickness:.1em;
+}
+
+footer section p {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************************/
+/**********************************************************************/
+
+/*****************************************************/
+/*            .request paginaaaaaaaaaaaaa            */
+/*****************************************************/
+
+.request {
+  margin: 0;
+  padding: 0;
+}
+
+.request main {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.request main {
+  /********************************/
+  /*      Section 1 / form 1 *     /
+  /********************************/
+  section:first-of-type {
+    margin: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section:first-of-type img {
+    order: -1;
+    width: 180%;
+  }
+  
+  
+
+
+  section:first-of-type form {
+    background-color: var(--color-background);
+
+    position: absolute;
+    margin-top: 15%;
+    padding: 0.5em;
+    width: 90%;
+    min-width: 300px;
+    max-width: 750px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  input.search {
+    font-family: "merchant";
+    font-size: 16px;
+
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+
+    transition: all 0.3s ease;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  input.search:focus {
+    border-color: #532abd;
+    box-shadow: 0 0 5px var(--color-active);
+  }
+
+  input[type="submit"] {
+    background-color: black;
+    color: white;
+    font-family: "merchant";
+    padding: 0.5em 1em;
+  }
+
+  /* section 2*/
+
+  h3 {
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  section:last-of-type {
+    margin: 2em;
+    margin-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  /********************************/
+  /*          Final form          */
+  /********************************/
+
+  > form { 
+  padding: 0;
+  margin: 2em;
+  gap: 1.5em 2em;
+  max-width: 850px;
+
+  display: grid;                 
+  grid-template-columns: 1fr 1fr;
+  }
+
+  > form div {
+    display: grid;
+    gap: .5em;
+  }
+
+  > form div:last-of-type,
+  >form p,
+  > form button {
+    grid-column: span 2;
+  }
+
+  /* responsive from 2 to 1 column */
+  @media (max-width: 600px) {
+    > form {
+      grid-template-columns: 1fr;
+    }
+
+    >form div:last-of-type,
+    > form p,
+    > form button {
+      grid-column: span 1;
+    }
+    
+  }
+
+
+
+  form textarea {
+    resize: vertical;
+    min-height: 10em;
+  }
+
+  /* Text in form!!*/ 
+  > form input,
+  > form select,
+  > form textarea {
+    border: 1px solid black;
+    font-family: inherit;
+    padding: 0.5em 1em;
+  }
+
+  > form input:valid {
+    outline-color: var(--color-succes);
+  }
+
+  > form input:invalid {
+    outline-color: var(--color-error);
+  }
+
+  > form input:focus:invalid {
+    outline-color: var(--color-warning);
+  }
+
+  /* Color thingy's */
+  
+  > form button {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+  }
+
+  > form button:hover {
+    background: #333;
+  }
+
+
 }
