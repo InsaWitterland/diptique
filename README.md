@@ -206,7 +206,11 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
 
   <img src="readme-images/versprongen header 1.png" width="375px" alt="screenshot">
   <img src="readme-images/versprongen header 2.png" width="375px" alt="screenshot">
-  Doordat bij pagina twee de H1 veranderde versprong het logo helemaal in de header en daardoor klopte niks meer..
+  Doordat bij pagina twee de H1 veranderde versprong het logo helemaal in de header en daardoor klopte niks meer.. met veel moeite heb ik het kunnen oplossen.
+
+  <img src="readme-images/divvergeten.png" width="375px" alt="screenshot">
+  Om de HTML voor de screenreader goed te houden heb ik de H2 boven de img gezet, alleen nu ik het achteraf responsive ging maken kwam ik een parent element tekort voor de tekst.
+  Dit heb ik met @media (min-width) flex row proberen op te lossen, maar kom niet verder dan dit. Daarom heb ik na veel moeite toch maar een div toegevoegd...
 </details>
 
 
