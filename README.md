@@ -208,6 +208,8 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   <img src="readme-images/divvergeten.png" width="375px" alt="screenshot">
   Om de HTML voor de screenreader goed te houden heb ik de H2 boven de img gezet, alleen nu ik het achteraf responsive ging maken kwam ik een parent element tekort voor de tekst.
   Dit heb ik met @media (min-width) flex row proberen op te lossen, maar kom niet verder dan dit. Daarom heb ik na veel moeite toch maar een div toegevoegd...
+
+  Op pagina 2 had ik een ul in de form gebruikt. Dit mag blijkbaar niet, dus heb ik het aangepast naar divjes. Ik had al CSS styling, dus dit kostte echt weer wat tijd.
 </details>
 
 
