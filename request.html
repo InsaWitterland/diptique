@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Insa Witterland" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Diptyque request</title>
+    <link rel="icon" href="https://www.google.com/s2/favicons?sz=32&domain=diptyqueparis.com">
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="request">
+    <header>
+      <div>
+        <button><img alt="" src="imagesheader/nav.svg" /></button>
+        <button><img alt="search" src="imagesheader/search.svg" /></button>
+        <a href="/"><img alt="Diptyque" src="imagesheader/logo.svg" /></a>
+        <a href="/"><img alt="profile" src="imagesheader/profile.svg" /></a>
+        <button><img alt="shopping bag" src="imagesheader/shop.svg" /></button>
+      </div>
+
+      <nav>
+        <div>
+          <button>
+            <img src="imgregular/x.svg" alt="" />
+          </button>
+          <form action="request.html" method="get">
+            <input
+              class="search"
+              aria-label="Search"
+              maxlength="512"
+              placeholder="Search for a scent"
+              type="text"
+            />
+          </form>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="/">New & trending</a>
+            </li>
+            <li>
+              <a href="/">Fragrances</a>
+            </li>
+            <li>
+              <a href="/">Candles & home</a>
+            </li>
+            <li>
+              <a href="/">Bath & body</a>
+            </li>
+            <li>
+              <a href="/">Home decor</a>
+            </li>
+            <li>
+              <a href="/">Gifts</a>
+            </li>
+            <li>
+              <a href="request.html">Submit a request</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Submit a request</h1>
+        <img src="imgrequest/imgi_29_01HZPBR5QDWAKZG7MHQ87JB9NQ.png" alt="" />
+        <form action="/" method="get">
+          <input
+            class="search"
+            aria-label="Search"
+            maxlength="512"
+            placeholder="How can we assist you..."
+            type="text"
+          />
+          <input type="submit" name="commit" value="Search" />
+        </form>
+      </section>
+      <section>
+        <h3>Need help?</h3>
+        <p><strong>Email :</strong> customerservice@diptyque.us</p>
+        <p><strong>Phone :</strong> +1 (833) 798-0845</p>
+        <p>Monday to Friday - 9.00 am to 6.00 pm EST (Excluding holidays)</p>
+        <p>We will respond in 1-2 working days. Thank you for your patience.</p>
+
+        <p>
+          We do not send samples on request but for any order, you can choose
+          your 2 free samples.
+        </p>
+      </section>
+      <form action="/" method="post"> <!--action sends info too page (if linked), method is the way how-->
+        <div>
+          <label for="help">How can we help you?</label>
+          <select required class="help" name="help">
+            <option value="product">Product information</option>
+            <option value="general">General information</option>
+            <option value="order">Order information</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="email">Your email address</label>
+          <input required placeholder="email@adress.com" type="email" name="email"/>
+        </div>
+
+        <div>
+          <label for="name">Name</label>
+          <input required placeholder="Your name" class="name" id="name" type="text" name="name" minlength="8"/>
+        </div>
+
+        <div>
+          <label for="phone">Phone number</label>
+          <input required placeholder="+31 612345678" class="phone" type="tel" name="phone" minlength="9"/>
+        </div>
+
+        <div>
+          <label for="purpose">Purpose of the request</label>
+          <select required class="purpose" name="purpose">
+            <option value="">-</option>
+            <option value="refund">Refund</option>
+            <option value="exchange">Exchange</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input required class="subject" type="text" name="subject"/>
+        </div>
+
+        <div>
+          <label for="description">Description</label>
+          <textarea required class="description" name="description" rows="4" minlength="10"></textarea>
+        </div>
+
+        <p>
+          Please enter the details of your request. A member of our support
+          staff will respond as soon as possible.
+        </p>
+
+        <button type="submit">Submit request</button>
+      </form>
+    </main>
+
+    <script defer src="scripts/script.js"></script>
+  </body>
+</html>

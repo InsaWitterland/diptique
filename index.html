@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Insa Witterland" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Insa Witterland">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Diptique</title>
-
-    <link href="styles/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="images header/favicon.svg" />
+    <title>Diptyque</title>
+    <link rel="icon" href="https://www.google.com/s2/favicons?sz=32&domain=diptyqueparis.com">
+    <link href="styles/style.css" rel="stylesheet">
   </head>
 
   <body class="home">
     <header>
-      <button><img alt="open navigation" src="images header/nav.svg" /></button>
-      <button><img alt="search" src="images header/search.svg" /></button>
-      <a
-        ><h1><img alt="Diptique" src="images header/logo.svg" /></h1
-      ></a>
-      <a><img alt="profile" src="images header/profile.svg" /></a>
-      <button><img alt="shopping bag" src="images header/shop.svg" /></button>
+      <div>
+        <button><img alt="" src="imagesheader/nav.svg"></button>
+        <button><img alt="search" src="imagesheader/search.svg"></button>
+        <a href="/"
+          ><h1><img alt="Diptyque" src="imagesheader/logo.svg"></h1
+        ></a>
+        <a href="/"><img alt="profile" src="imagesheader/profile.svg"></a>
+        <button class="shoppingbag"><img alt="shopping bag" src="imagesheader/shop.svg"><span>0</span></button>
+      </div>
+
+      <nav>
+        <div>
+          <button>
+            <img src="imgregular/x.svg" alt="">
+          </button>
+          <form action="request.html" method="get">
+            <input class="search" aria-label="Search" maxlength="512" placeholder="Search for a scent" type="text">
+          </form>
+          
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="/">New & trending</a>
+            </li>
+            <li>
+              <a href="/">Fragrances</a>
+            </li>
+            <li>
+              <a href="/">Candles & home</a>
+            </li>
+            <li>
+              <a href="/">Bath & body</a>
+            </li>
+            <li>
+              <a href="/">Home decor</a>
+            </li>
+            <li>
+              <a href="/">Gifts</a>
+            </li>
+            <li>
+              <a href="request.html">Submit a request</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -27,16 +65,16 @@
         <h2>In the shade of Philosykos</h2>
         <img
           alt="Philosykos parfum bottle on a rock with the sea in the background"
-          src="img diptique/imgi_31_GRECE_VISUEL_PARFUM_PHILOSYKOS_02_2023_2025x2700px_DIPTYQUE__1_.png"
-        />
+          src="imgregular/philosykos.png"
+        >
         <p>
           High up in the scorching heat of a Greek island, a fig tree fills the
           air with its scent. Warmed by the sun, it reveals the freshness of its
           leaves, the creamy flavor of its fruit and the density of its wood. A
           summer haze.
         </p>
-        <a>Discover the fragrance</a>
-        <a>Engrave your Eau de Toilette</a>
+        <a href="/">· Discover the fragrance ·</a>
+        <a href="/">Engrave your Eau de Toilette</a>
       </article>
 
       <section>
@@ -44,12 +82,12 @@
         <article>
           <ul>
             <li>
-              <a>
+              <a href="/">
                 <h3>Orphéon - Eau de parfum</h3>
                 <img
                   alt="Orphéon parfum bottle on white background"
-                  src="img carousel parfum/imgi_26_diptyque-orpheon-eau-de-parfum-75ml-orphp75c-1.png"
-                />
+                  src="imgcarouselparfum/imgi_26_diptyque-orpheon-eau-de-parfum-75ml-orphp75c-1.png"
+                >
                 <p>Best-seller</p>
                 <p>
                   Tonka bean. Like a tribute to a legendary bar in the form of a
@@ -57,17 +95,17 @@
                 </p>
                 <p>75ml</p>
                 <p>170 €</p>
-                <button>Add to bag</button>
               </a>
+              <button class="buy">Add to bag</button>
             </li>
 
             <li>
-              <a>
+              <a href="/">
                 <h3>Fleur de Peau - Eau de parfum</h3>
                 <img
                   alt="Fleur de Peau parfum bottle on white background"
-                  src="img carousel parfum/imgi_28_diptyque-fleur-de-peau-eau-de-parfum-75ml-fleurp75c-1.png"
-                />
+                  src="imgcarouselparfum/imgi_629_diptyque-fleur-de-peau-eau-de-parfum-75ml-fleurp75c-1.png"
+                >
                 <p>Best-seller</p>
                 <p>
                   A perfumed tribute to an ancient myth, expressed here by
@@ -75,8 +113,76 @@
                 </p>
                 <p>75ml</p>
                 <p>170 €</p>
-                <button>Add to bag</button>
               </a>
+              <button class="buy">Add to bag</button>
+            </li>
+
+            <li>
+              <a href="/">
+                <h3>L'Eau Papier - Eau de toilette</h3>
+                <img
+                  alt="L'Eau Papier parfum bottle on white background"
+                  src="imgcarouselparfum/imgi_28_diptyque-l-eau-papier-eau-de-toilette-100ml-papier100-1.png"
+                >
+                <p>Best-seller</p>
+                <p>
+                  Ink infusing a page. Adeep dive into the essence of musks.
+                </p>
+                <p>75ml</p>
+                <p>145 €</p>
+              </a>
+              <button class="buy">Add to bag</button>
+            </li>
+
+            <li>
+              <a href="/">
+                <h3>Philosykos - Eau de parfum</h3>
+                <img
+                  alt="Philosykos parfum bottle on white background"
+                  src="imgcarouselparfum/imgi_635_diptyque-philosykos-eau-de-parfum-75ml-philop75-1.png"
+                >
+                <p>Best-seller</p>
+                <p>
+                  Blazing sun. A grove in Greece. Fresh facets of the fig tree emerge.
+                </p>
+                <p>75ml</p>
+                <p>170 €</p>
+              </a>
+              <button class="buy">Add to bag</button>
+            </li>
+
+            <li>
+              <a href="/">
+                <h3>Eau des Sens - Eau de toilette</h3>
+                <img
+                  alt="Eau des Sens parfum bottle on white background"
+                  src="imgcarouselparfum/imgi_638_diptyque-eau-des-sens-eau-de-toilette-100ml-sens100v1-1.png"
+                >
+                <p>Best-seller</p>
+                <p>
+                  A new expression of bitter orange. Sharp, yet sweet. Full of life.
+                </p>
+                <p>75ml</p>
+                <p>145 €</p>
+              </a>
+              <button class="buy">Add to bag</button>
+            </li>
+
+            <li>
+              <a href="/">
+                <h3>Eau Duelle - Eau de parfum</h3>
+                <img
+                  alt="Eau Duelle parfum bottle on white background"
+                  src="imgcarouselparfum/imgi_34_diptyque-eau-duelle-eau-de-parfum-75ml-duellep75-1.png"
+                >
+                <p>Best-seller</p>
+                <p>
+                  A lot can be said, many sweet words. An ode to travel and to vanilla. Sweet. Spicy.
+                </p>
+                <p>75ml</p>
+                <p>170 €</p>
+              </a>
+              <button class="buy">Add to bag</button>
             </li>
           </ul>
         </article>
@@ -84,8 +190,12 @@
 
       <section>
         <h2>La Droguerie: refilable creations</h2>
-        <img alt="" src="img diptique/imgi_25_MicrosoftTeams-image__59_.png" />
-        <ul>
+        <img
+          alt="Diptyque roomspray and other cleaning products on a shelf"
+          src="imgregular/section2.jpg"
+        >
+        <!--If I had more time I would add product info with Javascript here-->
+        <ul aria-hidden="true"> 
           <li>
             <button>+</button>
             <button>+</button>
@@ -96,49 +206,60 @@
           </li>
         </ul>
       </section>
+
       <article>
-        <h2>Transparency and traceability of raw materials</h2>
-        <p>
-          We aim for total transparency and make accessing information on our
-          raw materials as easy as possible.
-        </p>
-        <a>Find out more</a>
+        <div>
+          <h2>Transparency and traceability of raw materials</h2>
+          <p>
+            We aim for total transparency and make accessing information on our
+            raw materials as easy as possible.
+          </p>
+          <a href="/">Find out more</a>
+        </div>
+        <img
+          alt="Fleur de peau parfum bottle on a bright background surrounded by flowers and other ingredients"
+          src="imgregular/article2.png"
+        >
       </article>
 
       <section>
         <h2>Explore the world of Diptique</h2>
         <ul>
           <li>
-            <a
-              ><img
-                alt=""
-                src="img explore/UNIVERS_VISUEL_BOUGIES-MAISON_MULTI-PRODUITS_2023_ECOM_2142x2142_DIPTYQUE.png"
-              />Fragrances</a
-            >
+            <a href="/">
+              <img
+                alt="Multiple Diptique bottles stacked on top of each other with a plain background"
+                src="imgexplore/n1.png"
+              >
+              <a href="/">· Fragrances ·</a>
+            </a>
           </li>
           <li>
-            <a
-              ><img
-                alt=""
-                src="img explore/UNIVERS_VISUEL_BOUGIES-MAISON_MULTI-PRODUITS_2023_ECOM_2142x2142_DIPTYQUE.png"
-              />Fragrances</a
-            >
+            <a href="/">
+              <img
+                alt="Interior parfume bottle surrounded by stacked scented candles"
+                src="imgexplore/n2.png"
+              >
+              <a href="/">· Candles & home ·</a>
+            </a>
           </li>
           <li>
-            <a
-              ><img
-                alt=""
-                src="img explore/UNIVERS_VISUEL_BOUGIES-MAISON_MULTI-PRODUITS_2023_ECOM_2142x2142_DIPTYQUE.png"
-              />Fragrances</a
-            >
+            <a href="/">
+              <img
+                alt="Bath and body soap bottles with a minimal background"
+                src="imgexplore/n3.png"
+              >
+              <a href="/">· Bath & body ·</a>
+            </a>
           </li>
           <li>
-            <a
-              ><img
-                alt=""
-                src="img explore/UNIVERS_VISUEL_BOUGIES-MAISON_MULTI-PRODUITS_2023_ECOM_2142x2142_DIPTYQUE.png"
-              />Fragrances</a
-            >
+            <a href="/">
+              <img
+                alt="Different types of glass vases and candle containers with a minimal background"
+                src="imgexplore/n4.png"
+              >
+              <a href="/">· Home decor ·</a>
+            </a>
           </li>
         </ul>
       </section>
@@ -149,28 +270,38 @@
         <h2>At your service</h2>
         <ul>
           <li>
-            <img alt="" src="" />
-            <p></p>
+            <img
+              alt="Illustration serieus of a box"
+              src="imgatyourservice/n1.svg"
+            >
+            <p aria-hidden="true">Free delivery starting from 99€</p>
           </li>
           <li>
-            <img alt="" src="" />
-            <p></p>
+            <img alt="Diptique gift set" src="imgatyourservice/n2.svg">
+            <p aria-hidden="true">Free Diptique gift set</p>
           </li>
           <li>
-            <img alt="" src="" />
-            <p></p>
+            <img
+              alt="Diptique parfume bottle and sample"
+              src="imgatyourservice/n3.svg"
+            >
+            <p aria-hidden="true">Fragrances - try when you buy</p>
           </li>
           <li>
-            <img alt="" src="" />
-            <p></p>
+            <img alt="Two parfume samples" src="imgatyourservice/n4.svg">
+            <p aria-hidden="true">Two free samples with all orders</p>
           </li>
           <li>
-            <img alt="" src="" />
-            <p></p>
+            <img alt="Box with arrow" src="imgatyourservice/n5.svg">
+            <p aria-hidden="true">Free returns</p>
+          </li>
+          <li>
+            <img alt="Hand with gift" src="imgatyourservice/n6.svg">
+            <p aria-hidden="true">Welcome gift</p>
           </li>
         </ul>
       </section>
-
+      <div></div>
       <div></div>
     </main>
 
@@ -180,17 +311,10 @@
         <p>We are here to assist you</p>
         <a href="/">Contact us</a>
         <p>Customer Service Hours</p>
-        <p>Monday - Friday: 10am to 7 pm</p>
-        <p>Saturday: 10 am to 5pm</p>
-        <a>Help Center</a>
+        <p>Monday - Friday: 10am to 7pm</p>
+        <p>Saturday: 10am to 5pm</p>
+        <a href="/">Help Center</a>
       </section>
-      <ul>
-        <li><a>Practical information</a></li>
-        <li><a>Services</a></li>
-        <li><a>Follow us</a></li>
-        <li><a>Explore website</a></li>
-        <li><a>Legal</a></li>
-      </ul>
     </footer>
 
     <script defer src="scripts/script.js"></script>
