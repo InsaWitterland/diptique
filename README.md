@@ -145,7 +145,13 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  Mijn website scorde redelijk goed op gebied van toegankelijkheid. Fatima had het getest. Mijn website heeft een betere heading structuur, alt tekst en navigatie. Ik zou nog een aantal buttons kunnen verstoppen.
+  Mijn website scorde redelijk goed op gebied van toegankelijkheid. Fatima had het getest. Mijn website heeft een betere heading structuur, alt tekst en navigatie dan de originele website. Ik zou nog een aantal buttons kunnen verstoppen of een aantal teksten kunnen uitbreiden.. Dit gaat over pagina 1, aangezien ik pagina 2 nog niet heb.
+
+<img src="readme-images/WCAG checklist_Pagina_1_Afbeelding_0001.png" width="375px" alt="scan van checklist">
+<img src="readme-images/WCAG checklist_Pagina_1_Afbeelding_0002.png" width="375px" alt="scan van checklist">
+<img src="readme-images/WCAG checklist_Pagina_1_Afbeelding_0003.png" width="375px" alt="scan van checklist">
+<img src="readme-images/WCAG checklist_Pagina_1_Afbeelding_0004.png" width="375px" alt="scan van checklist">
+<img src="readme-images/WCAG checklist_Pagina_1_Afbeelding_0005.png" width="375px" alt="scan van checklist">
 </details>
 
 
