@@ -189,8 +189,8 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/screenshoteind1.npg" width="375px" alt="uitkomst">
-  <img src="readme-images/screenshoteind2.npg" width="375px" alt="uitkomst">
+  <img src="readme-images/screenshoteind1.png" width="375px" alt="uitkomst">
+  <img src="readme-images/screenshoteind2.png" width="375px" alt="uitkomst">
 
 
   ### Dit ging goed/Heb ik geleerd: 
