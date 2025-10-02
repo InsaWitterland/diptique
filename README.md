@@ -222,8 +222,8 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron 1 CSS Tricks - CSS Grid Layout Guide
+  2. bron 2 CSS Tricks - CSS Flexbox Layout Guide
+  3. bron 3 ChatGpT - voor uitleg van element of om stukken te controleren als ik vastliep
 
 </details>
