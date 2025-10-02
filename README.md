@@ -165,7 +165,7 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  <img src="readme-images/week 4.png" width="375px" alt="Pagina 2 contact">
+  <img src="readme-images/Week 4.png" width="375px" alt="Pagina 2 contact">
   <img src="readme-images/week 4 stand van zaken.png" width="375px" alt="Pagina 2 contact">
 
   ### Agenda voor meeting
