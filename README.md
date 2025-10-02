@@ -189,17 +189,15 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screenshoteind1.npg" width="375px" alt="uitkomst">
+  <img src="readme-images/screenshoteind2.npg" width="375px" alt="uitkomst">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+ Ik heb enorm veel geleerd. Van css selectors tot aan een website responsive maken. Voorheen moest ik letterlijk alles opzoeken, maar het gaat steeds vlotter allemaal.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
 
   <img src="readme-images/versprongen header 1.png" width="375px" alt="screenshot">
   <img src="readme-images/versprongen header 2.png" width="375px" alt="screenshot">
@@ -210,6 +208,10 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   Dit heb ik met @media (min-width) flex row proberen op te lossen, maar kom niet verder dan dit. Daarom heb ik na veel moeite toch maar een div toegevoegd...
 
   Op pagina 2 had ik een ul in de form gebruikt. Dit mag blijkbaar niet, dus heb ik het aangepast naar divjes. Ik had al CSS styling, dus dit kostte echt weer wat tijd.
+
+  Een ding waar ik veel tijd aan kwijt was en niet lukte was de fixed/ sticky header. Om items aan je shopping bag toe te kunnen voegen moet je natuurlijk de header kunnen zien, dus ik vond het jammer dat dat niet gelukt was. 
+
+  Het laatste wat mij niet lukte was op het einde een img laten veranderen door een hover. Dan moest ik weer tags gaan toevoegen en dan versprong mijn CSS weer. Hier had ik geen tijd voor om het goed uit te zoeken.
 </details>
 
 
@@ -220,10 +222,6 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
-
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
 
   1. bron 1 CSS Tricks - CSS Grid Layout Guide
   2. bron 2 CSS Tricks - CSS Flexbox Layout Guide
