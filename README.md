@@ -217,6 +217,15 @@ De website van Diptyque is erg makkelijk te navigeren met een screenreader. De l
   Een ding waar ik veel tijd aan kwijt was en niet lukte was de fixed/ sticky header. Om items aan je shopping bag toe te kunnen voegen moet je natuurlijk de header kunnen zien, dus ik vond het jammer dat dat niet gelukt was. 
 
   Het laatste wat mij niet lukte was op het einde een img laten veranderen door een hover. Dan moest ik weer tags gaan toevoegen en dan versprong mijn CSS weer. Hier had ik geen tijd voor om het goed uit te zoeken.
+
+
+  Als ik meer tijd had zou ik...
+  - De "Best sellers" een hover img geven zodat je de achterkant van de fles kunt zien.
+  - Een animatietje toevoegen
+  - Betere aantoningen contact formulier
+  - Header sticky maken...
+  - Alles net iets beter maken
+
 </details>
 
 
